@@ -1,0 +1,177 @@
+
+::-webkit-scrollbar {
+
+    display: none; 
+}
+
+::-moz-scrollbar {
+
+    display: none; 
+}
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700');
+
+body{
+    background-color: #f4f4f4;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.flex-div{
+   display: flex;
+}
+
+.flex-direction-row{
+    flex-direction: row;
+}
+
+.flex-justify-content-center{
+    justify-content: center;
+}
+
+.flex-justify-content-left{
+    justify-content: flex-start;
+}
+
+.flex-justify-content-right{
+    justify-content: flex-end;
+}
+
+.flex-align-items-center{
+    align-items: center;
+}
+
+.flex-align-items-end{
+    align-items: flex-end;
+}
+
+.flex-align-items-start{
+    align-items: flex-start;
+}
+
+#mainFrame{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+}
+
+
+#landingScreen{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.headingMain{
+    font-family: 'Varela Round', sans-serif;
+    color:white;
+    font-size: 3.6vh;
+}
+
+.footer{
+    width:100%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    color: white;
+}
+
+#homePage{
+    display: none;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    top:0%;
+    left: 0%;
+    background-color:white;
+}
+
+.tabValue{
+    text-transform: none !important;
+}
+
+.topBar{
+    margin-left: 10.5px;
+    margin-right: 10.5px;
+    border-top: 4px solid #70a84a;
+    padding: 0;
+}
+
+.topBar1{
+    margin-left: 10.5px;
+    margin-right: 10.5px;
+    padding: 0;
+    border-top: 4px solid #70a84a;
+}
+
+.graphShowingDays{
+    width: 300px;
+    height: 300px;
+}
+
+#loaderDiv{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 150;
+}
+
+.disabledbutton {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.headingHeight{
+    font-size: 3vh;
+}
+
+.subheadingMain{
+    font-family: 'Varela Round', sans-serif;
+    color:white;
+    font-size: 2vh;
+}
+
+
+.hrLineColor{
+    border-color: rgba(51,51,51,0.1)
+}
+
+.buttonColorAll{
+    background-color: #833ac4;
+}
+
+
+.cardPanelBorderTop{
+    border-top: 6px solid #70a84a;
+}
+
+.baseTypeFontBold{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+}
+
+.baseTypeFontSemiBold{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+}
+
+.baseTypeFontRegular{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+}
+
+.baseTypeFontLight{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+}
+
+.baseTypeFontExtraLight{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 200;
+}

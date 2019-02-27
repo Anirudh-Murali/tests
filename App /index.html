@@ -1,0 +1,324 @@
+<html>
+    <head>
+        <title>
+            EBS
+        </title>
+    </head>
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link href="css/materialize.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mate_icon.css" >
+
+    <body>
+
+        <div id="loaderDiv">
+                <div class="preloader-wrapper big active">
+                    <div class="spinner-layer spinner-blue">
+                        <div class="circle-clipper left">
+                        <div class="circle"></div>
+                        </div><div class="gap-patch">
+                        <div class="circle"></div>
+                        </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                        </div>
+                    </div>
+
+                    <div class="spinner-layer spinner-red">
+                        <div class="circle-clipper left">
+                        <div class="circle"></div>
+                        </div><div class="gap-patch">
+                        <div class="circle"></div>
+                        </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                        </div>
+                    </div>
+
+                    <div class="spinner-layer spinner-yellow">
+                        <div class="circle-clipper left">
+                        <div class="circle"></div>
+                        </div><div class="gap-patch">
+                        <div class="circle"></div>
+                        </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                        </div>
+                    </div>
+
+                    <div class="spinner-layer spinner-green">
+                        <div class="circle-clipper left">
+                        <div class="circle"></div>
+                        </div><div class="gap-patch">
+                        <div class="circle"></div>
+                        </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    <div id="mainFrame" class="disabledbutton">
+        <div id="landingScreen">
+                <div class="row">
+                    <div class="col s12">
+                        <br>
+                        <br>
+                    </div>
+                    <div class="col s12 center">
+                        <img style="width:100%;"src="img/logo_image.gif">
+                    </div>
+
+                    <div class="col s12 center headingMain ">
+                        EBS
+                    </div>
+
+                    <div class="col s12 center subheadingMain">
+                        Energy Backed Securitization <br>
+                        Using Blockchain
+                    </div>
+                    <div class="col s12 center">
+                        <br>
+                        <br>
+                        <a  onclick="goToMainScreen()" class="btn btn-floating pulse"><i class="material-icons">send</i></a>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="row">
+                        <div class="col s12 center">
+                            Made with Love | Novus Genesis
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div id="homePage">
+            <nav class="nav-extended" style="background-color:#7db557;z-index: 100;position: sticky;top:0;">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo baseTypeFontRegular">EBS</a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">JavaScript</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">JavaScript</a></li>
+                    </ul>
+                </div>
+                <div class="nav-content">
+                    <ul class="tabs tabs-transparent">
+                    <li class="tab"><a class="active tabValue baseTypeFontSemiBold" href="#homeTab">Home</a></li>
+                    <li class="tab"><a href="#bankCitizen" class="tabValue baseTypeFontSemiBold">Bank History</a></li>
+                    <li class="tab"><a href="#bankGrid" class="tabValue baseTypeFontSemiBold">Grid History</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="homeTab" class="col s12">
+                <div class="row">
+                    <div class="col s12" style="padding-left:0px;padding-right:0px;">
+
+                            <div class="row">
+                                    <div class="col s12 m5" style="padding-left:0px;padding-right:0px;">
+                                        <div class="card-panel topBar">
+                                            <div class="row">
+                                                    <div class="col s12">
+                                                            <br>
+                                                    </div>
+                                                        <div class="col s5 offset-s1">
+                                                            <div class="row">
+                                                                <div class="col s12 baseTypeFontLight">
+                                                                    Total Amount
+                                                                </div>
+                                                                <div class="col s3 center" style="padding-left:0px;padding-right:0px;">
+                                                                    <img src="img/ruppe.png" style="height:40px;">
+                                                                </div>
+                                                                <div class="col s9">
+                                                                    <h5 class="baseTypeFontRegular" id="totalAmountID"></h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col s6">
+                                                            <div class="row">
+                                                                <div class="col s12 baseTypeFontLight">
+                                                                        Total Tokens
+                                                                </div>
+                                                                <div class="col s3 center" style="padding-left:0px;padding-right:0px;">
+                                                                    <img src="img/tokenSymbol.png" style="height:40px;">
+                                                                </div>
+                                                                <div class="col s8 offset-s1">
+                                                                        <h5 class="baseTypeFontRegular" id="totalTokenID"></h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col s12">
+                                                            <hr class="hrLineColor">
+                                                        </div>
+
+                                                        <div class="col s12">
+                                                                <br>
+                                                        </div>
+
+                                                        <div class="col s12 center">
+                                                            <button onclick="FuncWithdrawalTokens()" class="btn waves-effect waves-light buttonColorAll baseTypeFontLight" type="submit" name="action">Withdraw Tokens
+                                                                <i class="material-icons right">send</i>
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="col s12">
+                                                            <br>
+                                                        </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+
+
+                    </div>
+
+                    <div class="col s12" style="padding-left: 0px;padding-right: 0px;">
+                        <div class="row">
+                            <div class="col s12 m5" style="padding-left: 0px;padding-right: 0px;">
+                                <div id="graphShowingDays" class="card-panel topBar">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bankCitizen" class="col s12">
+                <div class="row">
+
+                    <div class="col s12 m5 pushBankDataHere" >
+
+                        <!-- <div class="card-panel topBar">
+                            <div class="row">
+                                <div class="col s12 center">
+                                    <h5 class="headingHeight">November, 14th 2018</h5>
+                                </div>
+                                <div class="col s12">
+                                    <hr>
+                                </div>
+                                <div class="col s12">
+                                    <table class="bordered centered">
+                                        <tbody>
+                                            <tr>
+                                                <td>Credit Id</td>
+                                                <td>1234</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Amount</td>
+                                                <td>Rs 650</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Conversion Rate </td>
+                                                <td>Rs 2.5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bank </td>
+                                                <td>B1</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col s12">
+                                        <br>
+                                </div>
+                                <div class="col s12 center">
+                                    <ul class="collapsible" data-collapsible="accordion">
+                                        <li>
+                                            <div class="collapsible-header" style="justify-content:center;">See tokens Under Conversion <i class="material-icons" style="margin-right: 0px;">arrow_drop_down</i></div>
+                                            <div class="collapsible-body">
+                                                    <div class="chip">
+                                                        1
+                                                    </div>
+                                            </div>
+                                        </li>
+                                     </ul>
+                                </div>
+                            </div>
+                        </div> -->
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="bankGrid" class="col s12">
+                <div class="row">
+                    <div class="col s12 m5 pushCitizenDataHere" >
+                            <!-- <div class="card-panel topBar">
+                            <div class="row">
+                                <div class="col s12 center">
+                                    <h5 class="headingHeight">November, 14th 2018</h5>
+                                </div>
+                                <div class="col s12">
+                                    <hr>
+                                </div>
+                                <div class="col s12">
+                                    <table class="bordered centered">
+                                        <tbody>
+                                            <tr>
+                                                <td>Credit Id</td>
+                                                <td>1234</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Amount</td>
+                                                <td>Rs 650</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Conversion Rate </td>
+                                                <td>Rs 2.5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bank </td>
+                                                <td>B1</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col s12">
+                                        <br>
+                                </div>
+                                <div class="col s12 center">
+                                    <ul class="collapsible" data-collapsible="accordion">
+                                        <li>
+                                            <div class="collapsible-header" style="justify-content:center;">See tokens Under Conversion <i class="material-icons" style="margin-right: 0px;">arrow_drop_down</i></div>
+                                            <div class="collapsible-body">
+                                                    <div class="chip">
+                                                        1
+                                                    </div>
+                                            </div>
+                                        </li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </body>
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+</html>
